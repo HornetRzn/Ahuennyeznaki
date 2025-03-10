@@ -68,5 +68,4 @@ async def init():
     logger.info(f"Webhook set to {webhook_url}")
 
 if __name__ == "__main__":
-    # Set the port to 5000 as per Replit guidelines
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)  # Исправленный порт
