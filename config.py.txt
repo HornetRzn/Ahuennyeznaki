@@ -1,0 +1,15 @@
+import os
+
+# Telegram Bot Token
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "your-token-here")
+
+# Webhook settings
+WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://your-domain.com")
+WEBHOOK_PATH = f"/webhook/{TELEGRAM_TOKEN}"
+
+# Flask settings
+PORT = 8000
+HOST = "0.0.0.0"
+
+# Chat settings
+MAX_CHAT_MESSAGES = 5
