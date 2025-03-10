@@ -33,7 +33,7 @@ class Storage:
         
         matches = []
         for other_id, other_user in self.users.items():
-            if (user_id in other_user.likes and 
+            if other_user and (user_id in other_user.likes and 
                 other_id in user.likes and 
                 other_id != user_id):
                 matches.append(other_id)
