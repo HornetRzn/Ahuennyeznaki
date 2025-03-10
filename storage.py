@@ -44,3 +44,6 @@ class Storage:
 
     def get_registration_state(self, user_id: int) -> Optional[str]:
         return self.registration_state.get(user_id)
+
+# Создаем экземпляр Storage
+storage = Storage()
